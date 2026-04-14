@@ -1,31 +1,36 @@
-import { HeadlineFlow } from './HeadlineFlow';
-import { HomePage } from './HomePage';
 import { Pages } from './Pages';
+import { AppStorageKeys, PreferenceKeys } from '../services/PreferencesService';
 
 @Entry
 @Component
 struct Index {
   @Provide('pageStack') pageStack: NavPathStack = new NavPathStack();
-
-  @Builder
-  Pages(name: string) {
-    if (name === Pages.HomePage) {
-      HomePage();
-    }
-    if (name === Pages.HeadlineFlow) {
-      HeadlineFlow();
-    }
-  }
+  @StorageProp(AppStorageKeys.storageHydrated) @Watch('onStorageHydratedChanged')
+  storageHydrated: boolean = false;
+  @State hasInitializedRootRoute: boolean = false;
 
   build() {
     Navigation(this.pageStack)
       .mode(NavigationMode.Stack)
-      .navDestination(this.Pages)
       .hideNavBar(true)
       .onAppear(() => {
-        if (this.pageStack.getAllPathName().length === 0) {
-          this.pageStack.pushPathByName('HomePage', null);
-        }
+        this.ensureInitialRoute();
       })
+  }
+
+  private onStorageHydratedChanged(): void {
+    this.ensureInitialRoute();
+  }
+
+  private ensureInitialRoute(): void {
+    if (this.hasInitializedRootRoute || !this.storageHydrated || this.pageStack.getAllPathName().length > 0) {
+      return;
+    }
+    const onboardingDone = AppStorage.get(PreferenceKeys.onboardingDone) as boolean | undefined;
+    this.pageStack.pushPathByName(Pages.HomePage, null);
+    if (!onboardingDone) {
+      this.pageStack.pushPathByName(Pages.OnboardingPage, null);
+    }
+    this.hasInitializedRootRoute = true;
   }
 }

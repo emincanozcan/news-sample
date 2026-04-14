@@ -3,6 +3,74 @@
     {
       "name": "start_window_background",
       "value": "#000000"
+    },
+    {
+      "name": "backgroundColor",
+      "value": "#205375"
+    },
+    {
+      "name": "bgColor",
+      "value": "#091B28"
+    },
+    {
+      "name": "surfaceCard",
+      "value": "#112B3C"
+    },
+    {
+      "name": "surfaceChip",
+      "value": "#17384B"
+    },
+    {
+      "name": "textPrimary",
+      "value": "#F2F8FC"
+    },
+    {
+      "name": "textSecondary",
+      "value": "#AFCAD9"
+    },
+    {
+      "name": "bookmarkAccent",
+      "value": "#FFB74D"
+    },
+    {
+      "name": "stateSuccess",
+      "value": "#42CF89"
+    },
+    {
+      "name": "stateWarning",
+      "value": "#F6C560"
+    },
+    {
+      "name": "stateDisabled",
+      "value": "#445A69"
+    },
+    {
+      "name": "topicTop",
+      "value": "#5CC8FF"
+    },
+    {
+      "name": "topicSports",
+      "value": "#76E39C"
+    },
+    {
+      "name": "topicEconomy",
+      "value": "#F5BC55"
+    },
+    {
+      "name": "topicSky",
+      "value": "#B894FF"
+    },
+    {
+      "name": "statusInfoBg",
+      "value": "#1B3A4C"
+    },
+    {
+      "name": "statusWarningBg",
+      "value": "#584318"
+    },
+    {
+      "name": "statusSuccessBg",
+      "value": "#174936"
     }
   ]
 }

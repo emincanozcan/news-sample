@@ -1,0 +1,44 @@
+{
+  "routerMap": [
+    {
+      "name": "HomePage",
+      "pageSourceFile": "src/main/ets/pages/RouteBuilders.ets",
+      "buildFunction": "HomePageBuilder"
+    },
+    {
+      "name": "HeadlineFlow",
+      "pageSourceFile": "src/main/ets/pages/RouteBuilders.ets",
+      "buildFunction": "HeadlineFlowBuilder"
+    },
+    {
+      "name": "OnboardingPage",
+      "pageSourceFile": "src/main/ets/pages/RouteBuilders.ets",
+      "buildFunction": "OnboardingPageBuilder"
+    },
+    {
+      "name": "ArticleDetailPage",
+      "pageSourceFile": "src/main/ets/pages/RouteBuilders.ets",
+      "buildFunction": "ArticleDetailPageBuilder"
+    },
+    {
+      "name": "SavedPage",
+      "pageSourceFile": "src/main/ets/pages/RouteBuilders.ets",
+      "buildFunction": "SavedPageBuilder"
+    },
+    {
+      "name": "HistoryPage",
+      "pageSourceFile": "src/main/ets/pages/RouteBuilders.ets",
+      "buildFunction": "HistoryPageBuilder"
+    },
+    {
+      "name": "BriefingPage",
+      "pageSourceFile": "src/main/ets/pages/RouteBuilders.ets",
+      "buildFunction": "BriefingPageBuilder"
+    },
+    {
+      "name": "SettingsPage",
+      "pageSourceFile": "src/main/ets/pages/RouteBuilders.ets",
+      "buildFunction": "SettingsPageBuilder"
+    }
+  ]
+}

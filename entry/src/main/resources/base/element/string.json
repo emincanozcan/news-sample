@@ -11,6 +11,426 @@
     {
       "name": "EntryAbility_label",
       "value": "label"
+    },
+    {
+      "name": "phase1_stub_message",
+      "value": "This destination will be completed in the next phase."
+    },
+    {
+      "name": "nav_onboarding",
+      "value": "Onboarding"
+    },
+    {
+      "name": "nav_article_detail",
+      "value": "Article Detail"
+    },
+    {
+      "name": "nav_saved",
+      "value": "Saved Articles"
+    },
+    {
+      "name": "nav_history",
+      "value": "Reading History"
+    },
+    {
+      "name": "nav_briefing",
+      "value": "Daily Briefing"
+    },
+    {
+      "name": "nav_settings",
+      "value": "Settings"
+    },
+    {
+      "name": "onboarding_title",
+      "value": "Pick your topics"
+    },
+    {
+      "name": "onboarding_subtitle",
+      "value": "Choose interests for a personalized watch feed."
+    },
+    {
+      "name": "saved_empty_title",
+      "value": "No saved stories yet"
+    },
+    {
+      "name": "saved_empty_subtitle",
+      "value": "Bookmark stories to read later."
+    },
+    {
+      "name": "history_empty_title",
+      "value": "No reading history"
+    },
+    {
+      "name": "history_empty_subtitle",
+      "value": "Open a story to build your timeline."
+    },
+    {
+      "name": "briefing_notifications_title",
+      "value": "Daily briefing reminder"
+    },
+    {
+      "name": "briefing_notifications_subtitle",
+      "value": "Get a quick digest at your preferred time."
+    },
+    {
+      "name": "home_title",
+      "value": "News Hub"
+    },
+    {
+      "name": "home_for_you",
+      "value": "For You"
+    },
+    {
+      "name": "home_topics",
+      "value": "Topics"
+    },
+    {
+      "name": "home_library",
+      "value": "Your Library"
+    },
+    {
+      "name": "home_daily_briefing",
+      "value": "Daily Briefing"
+    },
+    {
+      "name": "home_empty_feed",
+      "value": "Select interests to personalize your feed."
+    },
+    {
+      "name": "home_updated_now",
+      "value": "Updated just now"
+    },
+    {
+      "name": "onboarding_briefing_title",
+      "value": "Briefing preference"
+    },
+    {
+      "name": "onboarding_briefing_morning",
+      "value": "Morning briefing"
+    },
+    {
+      "name": "onboarding_briefing_evening",
+      "value": "Evening briefing"
+    },
+    {
+      "name": "onboarding_continue",
+      "value": "Continue"
+    },
+    {
+      "name": "onboarding_skip",
+      "value": "Skip setup"
+    },
+    {
+      "name": "article_summary",
+      "value": "Summary"
+    },
+    {
+      "name": "article_tags",
+      "value": "Tags"
+    },
+    {
+      "name": "article_open_topic",
+      "value": "Open topic feed"
+    },
+    {
+      "name": "action_save",
+      "value": "Save"
+    },
+    {
+      "name": "action_saved",
+      "value": "Saved"
+    },
+    {
+      "name": "action_remove",
+      "value": "Remove"
+    },
+    {
+      "name": "action_clear_all",
+      "value": "Clear all"
+    },
+    {
+      "name": "action_open",
+      "value": "Open"
+    },
+    {
+      "name": "saved_title",
+      "value": "Saved"
+    },
+    {
+      "name": "history_title",
+      "value": "History"
+    },
+    {
+      "name": "history_recently_read",
+      "value": "Recently read"
+    },
+    {
+      "name": "library_saved_count",
+      "value": "Saved stories"
+    },
+    {
+      "name": "library_history_count",
+      "value": "Read stories"
+    },
+    {
+      "name": "headline_swipe_hint",
+      "value": "Swipe stories · tap to open"
+    },
+    {
+      "name": "headline_topic_browser_label",
+      "value": "Topic headlines"
+    },
+    {
+      "name": "detail_not_found",
+      "value": "Story not found"
+    },
+    {
+      "name": "label_breaking",
+      "value": "BREAKING"
+    },
+    {
+      "name": "briefing_title",
+      "value": "Daily Briefing"
+    },
+    {
+      "name": "briefing_mark_done",
+      "value": "Done for now"
+    },
+    {
+      "name": "settings_title",
+      "value": "Settings"
+    },
+    {
+      "name": "settings_reminder_toggle",
+      "value": "Briefing reminder"
+    },
+    {
+      "name": "settings_reminder_morning",
+      "value": "Morning (08:00)"
+    },
+    {
+      "name": "settings_reminder_evening",
+      "value": "Evening (19:00)"
+    },
+    {
+      "name": "settings_sensor_shortcuts",
+      "value": "Sensor shortcuts"
+    },
+    {
+      "name": "settings_notification_ready",
+      "value": "Notifications are enabled for reminders."
+    },
+    {
+      "name": "settings_notification_off",
+      "value": "Notifications are off or unsupported."
+    },
+    {
+      "name": "settings_reminder_enabled_hint",
+      "value": "Reminder enabled. A local notification is used as briefing prompt."
+    },
+    {
+      "name": "settings_reminder_effective_hint",
+      "value": "Scheduled reminder is active. A daily system reminder will trigger at your selected time."
+    },
+    {
+      "name": "settings_reminder_pending_hint",
+      "value": "Reminder is set, but notifications are currently off. Enable notifications to activate it."
+    },
+    {
+      "name": "settings_reminder_disabled_hint",
+      "value": "Reminder disabled."
+    },
+    {
+      "name": "settings_test_hint",
+      "value": "Test reminder sends an immediate notification and does not change the schedule."
+    },
+    {
+      "name": "settings_test_sent",
+      "value": "Test reminder published."
+    },
+    {
+      "name": "settings_test_failed",
+      "value": "Failed to publish reminder."
+    },
+    {
+      "name": "status_enabled",
+      "value": "Enabled"
+    },
+    {
+      "name": "status_disabled",
+      "value": "Disabled"
+    },
+    {
+      "name": "status_selected",
+      "value": "Selected"
+    },
+    {
+      "name": "status_tap_to_select",
+      "value": "Tap to select"
+    },
+    {
+      "name": "status_permission_needed",
+      "value": "Needs notification permission"
+    },
+    {
+      "name": "status_offline_mode",
+      "value": "Offline mode: showing seeded local data."
+    },
+    {
+      "name": "status_stale_content",
+      "value": "Feed may be stale. Refresh when possible."
+    },
+    {
+      "name": "status_last_updated",
+      "value": "Last updated"
+    },
+    {
+      "name": "status_refreshing",
+      "value": "Refreshing..."
+    },
+    {
+      "name": "action_refresh",
+      "value": "Refresh"
+    },
+    {
+      "name": "action_quick_save",
+      "value": "Quick save"
+    },
+    {
+      "name": "action_test_reminder",
+      "value": "Test reminder"
+    },
+    {
+      "name": "state_loading",
+      "value": "Loading..."
+    },
+    {
+      "name": "state_error_title",
+      "value": "Could not load content"
+    },
+    {
+      "name": "state_error_subtitle",
+      "value": "Try again in a moment."
+    },
+    {
+      "name": "action_retry",
+      "value": "Retry"
+    },
+    {
+      "name": "a11y_open_article",
+      "value": "Open article"
+    },
+    {
+      "name": "a11y_topic_chip",
+      "value": "Open topic"
+    },
+    {
+      "name": "a11y_metric_saved",
+      "value": "Open saved stories"
+    },
+    {
+      "name": "a11y_metric_history",
+      "value": "Open reading history"
+    },
+    {
+      "name": "a11y_remove_item",
+      "value": "Remove this story"
+    },
+    {
+      "name": "a11y_quick_save",
+      "value": "Quick save current story"
+    },
+    {
+      "name": "a11y_briefing_done",
+      "value": "Finish briefing and return"
+    },
+    {
+      "name": "briefing_empty_title",
+      "value": "No briefing cards"
+    },
+    {
+      "name": "briefing_empty_subtitle",
+      "value": "Refresh to generate a digest."
+    },
+    {
+      "name": "sensor_unavailable",
+      "value": "Shortcut gestures unavailable on this watch."
+    },
+    {
+      "name": "sensor_unavailable_reason",
+      "value": "Not available on this build/device."
+    },
+    {
+      "name": "sensor_enabled",
+      "value": "Shortcut gestures enabled."
+    },
+    {
+      "name": "sensor_disabled",
+      "value": "Shortcut gestures disabled."
+    },
+    {
+      "name": "briefing_card_top_headline",
+      "value": "Top picks for you"
+    },
+    {
+      "name": "briefing_card_top_subtitle",
+      "value": "curated stories"
+    },
+    {
+      "name": "briefing_card_top_subtitle_format",
+      "value": "%{public}d curated stories"
+    },
+    {
+      "name": "briefing_card_saved_headline",
+      "value": "Saved for later"
+    },
+    {
+      "name": "briefing_card_saved_subtitle",
+      "value": "bookmarked stories"
+    },
+    {
+      "name": "briefing_card_saved_subtitle_format",
+      "value": "%{public}d bookmarked stories"
+    },
+    {
+      "name": "briefing_card_history_headline",
+      "value": "Keep your streak"
+    },
+    {
+      "name": "briefing_card_history_subtitle",
+      "value": "stories read recently"
+    },
+    {
+      "name": "briefing_card_history_subtitle_format",
+      "value": "%{public}d stories read recently"
+    },
+    {
+      "name": "notification_briefing_title",
+      "value": "Daily Briefing"
+    },
+    {
+      "name": "notification_briefing_ready_prefix",
+      "value": "Your"
+    },
+    {
+      "name": "notification_briefing_ready_suffix",
+      "value": "digest is ready."
+    },
+    {
+      "name": "notification_briefing_additional",
+      "value": "Open News Hub to continue reading."
+    },
+    {
+      "name": "time_morning",
+      "value": "morning"
+    },
+    {
+      "name": "time_afternoon",
+      "value": "afternoon"
+    },
+    {
+      "name": "time_evening",
+      "value": "evening"
     }
   ]
 }

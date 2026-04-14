@@ -1,12 +1,32 @@
 import { AbilityConstant, ConfigurationConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
+import { ReadingStateService } from '../services/ReadingStateService';
+import { AppStorageKeys, PreferencesService } from '../services/PreferencesService';
+import { AppSettingsStore } from '../store/AppSettingsStore';
+import { ReminderService } from '../services/ReminderService';
 
 const DOMAIN = 0x0000;
 
 export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
-    this.context.getApplicationContext().setColorMode(ConfigurationConstant.ColorMode.COLOR_MODE_NOT_SET);
+    AppStorage.setOrCreate(AppStorageKeys.storageHydrated, false);
+    ReminderService.setContext(this.context);
+    try {
+      this.context.getApplicationContext().setColorMode(ConfigurationConstant.ColorMode.COLOR_MODE_NOT_SET);
+    } catch (error) {
+      hilog.error(DOMAIN, 'newsSample', 'setColorMode failed: %{public}s', JSON.stringify(error));
+    }
+    PreferencesService.init(this.context).catch((error: Object) => {
+      hilog.error(DOMAIN, 'newsSample', 'Preferences init failed: %{public}s', JSON.stringify(error));
+    }).then(() => {
+      AppSettingsStore.hydratePersistentUiState();
+      return ReadingStateService.hydrateFromPreferences();
+    }).catch((error: Object) => {
+      hilog.error(DOMAIN, 'newsSample', 'Storage hydration failed: %{public}s', JSON.stringify(error));
+    }).finally(() => {
+      AppStorage.setOrCreate(AppStorageKeys.storageHydrated, true);
+    });
     hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onCreate');
   }
 
